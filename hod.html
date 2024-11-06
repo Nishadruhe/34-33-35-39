@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>HOD Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        .header img {
+            width: 190px;
+            float: left;
+            margin-right: 20px;
+        }
+        .header h1 {
+            color: #ff6600;
+            font-size: 24px;
+            margin: 0;
+text-align:center;
+        }
+        .header h2 {
+            color: #800000;
+            font-size: 20px;
+            margin: 0;
+text-align:center;
+
+        }
+        .header h3 {
+            color: #800000;
+            font-size: 18px;
+            margin: 0;
+text-align:center;
+
+        }
+        .header p {
+            color: #000000;
+            font-size: 14px;
+            margin: 0;
+text-align:center;
+
+        }
+        .content {
+            margin: 50px auto;
+            width: 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .content .captcha {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content button {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .footer {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        function generateCaptcha() {
+            var captcha = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById('captcha').innerText = captcha;
+        }
+        window.onload = generateCaptcha;
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img alt="University Logo" height="100" src="https://www.jntufastresult.com/wp-content/uploads/2018/08/jntuh-logo-1068x601.jpg" width="100"/>
+        <div>
+            <h1>JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY HYDERABAD</h1>
+           
+            <h3>UNIVERSITY COLLEGE OF ENGINEERING MANTHANI (JNTUH UCEM)</h3>
+            <p>Examination Branch</p>
+            <p>Centenary Colony(Po), Panur (Vil), Ramagiri (Mdl), Peddapalle, Telangana-505212, India</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Head Of the Department</h2>
+        <p>Please enter Registered email For Login</p>
+        <input placeholder="Registered Email" type="text"/>
+        <input placeholder="Security Code" type="text"/>
+        <div id="captcha" class="captcha"></div>
+        <button>Continue</button>
+    </div>
+    <div class="footer">
+        © Copyrights Reserved. 2017. JNTUH University College of Engineering Manthani, Peddapalle (Telangana) India. - Powered by iBongo.
+    </div>
+</body>
+</html>
